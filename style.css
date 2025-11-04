@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Cormorant+Garamond:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  background-color: #1a001f;
+  color: #e6d8f2;
+  background-image: radial-gradient(circle at top, #300030 0%, #1a001f 80%);
+  background-attachment: fixed;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  color: #d4b96f;
+}
+
+a {
+  color: #c26fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff4d4d;
+}
+
+header.banner {
+  position: relative;
+  text-align: center;
+}
+
+header.banner img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+header.banner .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f5e8ff;
+}
+
+.bio, .album, .links, .stories-list, .story-content {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 0 1em;
+  line-height: 1.6;
+}
+
+.links {
+  text-align: center;
+  margin-top: 3em;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5em;
+  color: #a88cb5;
+  font-size: 0.9em;
+  border-top: 1px solid #3e003e;
+  margin-top: 3em;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1em;
+  padding: 2em;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.gallery-item {
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+/* Page headers */
+.page-header {
+  text-align: center;
+  padding: 1em;
+  background-color: #250028;
+  border-bottom: 1px solid #3e003e;
+}
+
+.page-header a {
+  display: block;
+  margin-top: 0.5em;
+  color: #b874ff;
+  font-size: 0.9em;
+}
